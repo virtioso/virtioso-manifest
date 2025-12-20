@@ -1,6 +1,6 @@
 <manifest>
   <include name="external.xml"/>
-  <remote name="tiiuae" fetch="ssh://git@github.com/tiiuae/"/>
+  <remote name="tiiuae" fetch="ssh://git@github.com/hlyytine/"/>
   <remote name="github" fetch="https://github.com/"/>
   <remote name="yocto" fetch="https://git.yoctoproject.org/git/"/>
 
