@@ -15,6 +15,11 @@
     <linkfile src="yocto/setup-mirror-update.sh" dest="vm-images/setup-mirror-update.sh"/>
     <linkfile src="yocto/conf" dest="vm-images/conf"/>
     <linkfile src="README.md" dest="README.md"/>
+    <!-- Kconfig files -->
+    <linkfile src="Kconfig" dest="Kconfig"/>
+    <linkfile src="Kconfig.platform" dest="Kconfig.platform"/>
+    <linkfile src="Kconfig.kernel" dest="Kconfig.kernel"/>
+    <linkfile src="Kconfig.debug" dest="Kconfig.debug"/>
   </project>
 
   <project remote="yocto" name="poky" path="vm-images/poky" revision="scarthgap"/>
