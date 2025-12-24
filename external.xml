@@ -22,10 +22,11 @@
     <linkfile src="Kconfig.debug" dest="Kconfig.debug"/>
   </project>
 
-  <project remote="yocto" name="poky" path="vm-images/poky" revision="scarthgap"/>
+  <project remote="yocto" name="poky" path="vm-images/poky" revision="walnascar"/>
 
-  <project remote="yocto" name="meta-raspberrypi" path="vm-images/meta-raspberrypi" revision="1879cb831f4ea3e532cb5ce9fa0f32be917e8fa3"/>
-  <project remote="oe" name="meta-openembedded" path="vm-images/meta-openembedded" revision="scarthgap"/>
+  <project remote="yocto" name="meta-raspberrypi" path="vm-images/meta-raspberrypi" revision="walnascar"/>
+  <project remote="oe" name="meta-openembedded" path="vm-images/meta-openembedded" revision="walnascar"/>
+  <project remote="github" name="OE4T/meta-tegra" path="vm-images/meta-tegra" revision="walnascar"/>
 
   <extend-project name="seL4.git"                       remote="tiiuae" revision="rpi4"/>
   <extend-project name="seL4_tools.git"                 remote="tiiuae" revision="rpi4"/>
