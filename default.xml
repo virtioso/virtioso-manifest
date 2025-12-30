@@ -1,12 +1,49 @@
 <manifest>
-  <include name="external.xml"/>
-  <remote name="tiiuae" fetch="ssh://git@github.com/hlyytine/"/>
+  <include name="combined.xml"/>
   <remote name="github" fetch="https://github.com/"/>
   <remote name="yocto" fetch="https://git.yoctoproject.org/git/"/>
+  <remote name="oe" fetch="https://github.com/openembedded/"/>
+  <remote name="virtioso" fetch="https://github.com/virtioso/"/>
 
-  <project remote="tiiuae" name="meta-sel4.git" path="vm-images/meta-sel4" revision="tii/development"/>
+  <!-- Virtioso build system -->
+  <project remote="virtioso" name="virtioso-build.git" path="virtioso-build" revision="virtioso-next">
+    <linkfile src="configs" dest="configs"/>
+    <linkfile src="docker" dest="docker"/>
+    <linkfile src="Makefile" dest="Makefile"/>
+    <linkfile src="scripts" dest="scripts"/>
+    <linkfile src="yocto/setup.sh" dest="vm-images/setup.sh"/>
+    <linkfile src="yocto/setup-mirror-update.sh" dest="vm-images/setup-mirror-update.sh"/>
+    <linkfile src="yocto/conf" dest="vm-images/conf"/>
+    <linkfile src="README.md" dest="README.md"/>
+    <!-- Kconfig files -->
+    <linkfile src="Kconfig" dest="Kconfig"/>
+    <linkfile src="Kconfig.platform" dest="Kconfig.platform"/>
+    <linkfile src="Kconfig.kernel" dest="Kconfig.kernel"/>
+    <linkfile src="Kconfig.debug" dest="Kconfig.debug"/>
+  </project>
 
-  <project remote="tiiuae" name="tii-sel4-vm" path="projects/tii-sel4-vm" revision="master">
+  <!-- Virtioso Yocto layers -->
+  <project remote="virtioso" name="virtioso-yocto-layers.git" path="vm-images/virtioso-yocto-layers" revision="walnascar"/>
+
+  <!-- Virtioso CAmkES VM project -->
+  <project remote="virtioso" name="virtioso-camkes-vm.git" path="projects/virtioso-camkes-vm" revision="master">
     <linkfile src="CLAUDE.md" dest="CLAUDE.md"/>
   </project>
+
+  <!-- Yocto layers -->
+  <project remote="yocto" name="poky" path="vm-images/poky" revision="walnascar"/>
+  <project remote="yocto" name="meta-raspberrypi" path="vm-images/meta-raspberrypi" revision="walnascar"/>
+  <project remote="oe" name="meta-openembedded" path="vm-images/meta-openembedded" revision="walnascar"/>
+  <project remote="github" name="OE4T/meta-tegra" path="vm-images/meta-tegra" revision="walnascar"/>
+
+  <!-- Virtioso forks -->
+  <extend-project name="seL4.git"                       remote="virtioso" revision="virtioso-next"/>
+  <extend-project name="seL4_tools.git"                 remote="virtioso" revision="virtioso-next"/>
+  <extend-project name="sel4test.git"                   remote="virtioso" revision="virtioso-next"/>
+  <extend-project name="util_libs.git"                  remote="virtioso" revision="virtioso-next"/>
+  <extend-project name="camkes-vm-examples.git"         remote="virtioso" revision="virtioso-next"/>
+  <extend-project name="camkes-vm-linux.git"            remote="virtioso" revision="virtioso-next"/>
+  <extend-project name="camkes-vm-images.git"           remote="virtioso" revision="virtioso-next"/>
+  <extend-project name="camkes-vm.git"                  remote="virtioso" revision="virtioso-next"/>
+  <extend-project name="seL4_projects_libs.git"         remote="virtioso" revision="virtioso-next"/>
 </manifest>
