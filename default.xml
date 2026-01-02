@@ -20,6 +20,7 @@
     <linkfile src="Kconfig.platform" dest="Kconfig.platform"/>
     <linkfile src="Kconfig.kernel" dest="Kconfig.kernel"/>
     <linkfile src="Kconfig.debug" dest="Kconfig.debug"/>
+    <linkfile src="Kconfig.capdl" dest="Kconfig.capdl"/>
   </project>
 
   <!-- Virtioso Yocto layers -->
