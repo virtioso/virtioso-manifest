@@ -29,6 +29,7 @@
   <!-- Virtioso CAmkES VM project -->
   <project remote="virtioso" name="virtioso-camkes-vm.git" path="projects/virtioso-camkes-vm" revision="master">
     <linkfile src="CLAUDE.md" dest="CLAUDE.md"/>
+    <linkfile src="AGENTS.md" dest="AGENTS.md"/>
   </project>
 
   <!-- Yocto layers -->
@@ -48,4 +49,5 @@
   <extend-project name="camkes-vm.git"                  remote="virtioso" revision="virtioso-next"/>
   <extend-project name="seL4_projects_libs.git"         remote="virtioso" revision="virtioso-next"/>
   <extend-project name="projects_libs.git"              remote="virtioso" revision="virtioso-next"/>
+  <extend-project name="camkes-tool.git"                remote="virtioso" revision="virtioso-next"/>
 </manifest>
