@@ -30,6 +30,7 @@
   <project remote="virtioso" name="virtioso-camkes-vm.git" path="projects/virtioso-camkes-vm" revision="master">
     <linkfile src="CLAUDE.md" dest="CLAUDE.md"/>
     <linkfile src="AGENTS.md" dest="AGENTS.md"/>
+    <linkfile src="docs" dest="docs"/>
   </project>
 
   <!-- Yocto layers -->
