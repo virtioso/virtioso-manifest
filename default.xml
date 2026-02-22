@@ -36,6 +36,7 @@
   <!-- Local source repos used by Yocto recipes -->
   <project remote="virtioso" name="virtioso-qemu.git" path="sources/qemu" revision="virtioso/9.2.0"/>
   <project remote="virtioso" name="kmod-sel4-virt.git" path="sources/kmod-sel4-virt" revision="main"/>
+  <project remote="github" name="hlyytine/kmod-sel4-tracebuffer.git" path="sources/kmod-sel4-tracebuffer" revision="main"/>
   <project remote="virtioso" name="sel4-linux-kernel-support.git" path="sources/sel4-linux-kernel-support" revision="main"/>
 
   <!-- Yocto layers -->
