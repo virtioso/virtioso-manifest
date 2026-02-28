@@ -37,6 +37,7 @@
   <project remote="virtioso" name="virtioso-qemu.git" path="sources/qemu" revision="virtioso/9.2.0"/>
   <project remote="virtioso" name="kmod-sel4-virt.git" path="sources/kmod-sel4-virt" revision="main"/>
   <project remote="github" name="virtioso/kmod-vio-trace.git" path="sources/kmod-vio-trace" revision="main"/>
+  <project remote="virtioso" name="virtioso-contracts.git" path="sources/virtioso-contracts" revision="main"/>
   <project remote="virtioso" name="sel4-linux-kernel-support.git" path="sources/sel4-linux-kernel-support" revision="main"/>
 
   <!-- Yocto layers -->
