@@ -24,10 +24,10 @@
   </project>
 
   <!-- Virtioso Yocto layers -->
-  <project remote="virtioso" name="virtioso-yocto-layers.git" path="vm-images/virtioso-yocto-layers" revision="walnascar"/>
+  <project remote="virtioso" name="virtioso-yocto-layers.git" path="vm-images/virtioso-yocto-layers" revision="virtioso-next"/>
 
   <!-- Virtioso CAmkES VM project -->
-  <project remote="virtioso" name="virtioso-camkes-vm.git" path="projects/virtioso-camkes-vm" revision="master">
+  <project remote="virtioso" name="virtioso-camkes-vm.git" path="projects/virtioso-camkes-vm" revision="virtioso-next">
     <linkfile src="CLAUDE.md" dest="CLAUDE.md"/>
     <linkfile src="AGENTS.md" dest="AGENTS.md"/>
     <linkfile src="docs" dest="docs"/>
@@ -35,10 +35,10 @@
 
   <!-- Local source repos used by Yocto recipes -->
   <project remote="virtioso" name="virtioso-qemu.git" path="sources/qemu" revision="virtioso/9.2.0"/>
-  <project remote="virtioso" name="kmod-sel4-virt.git" path="sources/kmod-sel4-virt" revision="main"/>
-  <project remote="github" name="virtioso/kmod-vio-trace.git" path="sources/kmod-vio-trace" revision="main"/>
-  <project remote="virtioso" name="virtioso-contracts.git" path="sources/virtioso-contracts" revision="main"/>
-  <project remote="virtioso" name="sel4-linux-kernel-support.git" path="sources/sel4-linux-kernel-support" revision="main"/>
+  <project remote="virtioso" name="kmod-sel4-virt.git" path="sources/kmod-sel4-virt" revision="virtioso-next"/>
+  <project remote="virtioso" name="kmod-vio-trace.git" path="sources/kmod-vio-trace" revision="virtioso-next"/>
+  <project remote="virtioso" name="virtioso-contracts.git" path="sources/virtioso-contracts" revision="virtioso-next"/>
+  <project remote="virtioso" name="sel4-linux-kernel-support.git" path="sources/sel4-linux-kernel-support" revision="virtioso-next"/>
 
   <!-- Yocto layers -->
   <project remote="yocto" name="poky" path="vm-images/poky" revision="walnascar"/>
@@ -58,4 +58,7 @@
   <extend-project name="seL4_projects_libs.git"         remote="virtioso" revision="virtioso-next"/>
   <extend-project name="projects_libs.git"              remote="virtioso" revision="virtioso-next"/>
   <extend-project name="camkes-tool.git"                remote="virtioso" revision="virtioso-next"/>
+  <extend-project name="capdl.git"                      remote="virtioso" revision="virtioso-next"/>
+  <extend-project name="seL4_libs.git"                  remote="virtioso" revision="virtioso-next"/>
+  <extend-project name="global-components.git"          remote="virtioso" revision="virtioso-next"/>
 </manifest>

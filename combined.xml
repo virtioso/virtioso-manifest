@@ -15,7 +15,7 @@
   <remote name="nanopb" fetch="https://github.com/nanopb"/>
   <remote name="opensbi" fetch="https://github.com/riscv"/>
 
-  <project name="nanopb" path="tools/nanopb" remote="nanopb" revision="c716db13070bfb7de03b33f5a6558528cbf8a249" upstream="master" dest-branch="refs/tags/0.4.3"/>
+  <project name="nanopb" path="tools/nanopb" remote="nanopb" revision="cad3c18ef15a663e30e3e43e3a752b66378adec1" upstream="master" dest-branch="refs/tags/0.4.9.1"/>
   <project name="opensbi" path="tools/opensbi" remote="opensbi" revision="e7fa66c2160ec139de1853a00f669c09320a9256"/>
   <project name="sel4test.git" path="projects/sel4test" revision="0bbb0c6be4e98df98a04b045f98c5a9d272295b2" upstream="master" dest-branch="master"/>
 
