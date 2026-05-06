@@ -35,7 +35,7 @@
   </project>
 
   <!-- Local source repos used by Yocto recipes -->
-  <project remote="virtioso" name="virtioso-qemu.git" path="sources/qemu" revision="virtioso/9.2.0"/>
+  <project remote="virtioso" name="virtioso-qemu.git" path="sources/qemu" revision="virtioso/10.2.0"/>
   <project remote="virtioso" name="kmod-sel4-virt.git" path="sources/kmod-sel4-virt" revision="virtioso-next"/>
   <project remote="virtioso" name="kmod-vio-trace.git" path="sources/kmod-vio-trace" revision="virtioso-next"/>
   <project remote="virtioso" name="virtioso-contracts.git" path="sources/virtioso-contracts" revision="virtioso-next"/>

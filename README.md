@@ -1,1 +1,1 @@
-# TII seL4 manifest
+# Virtioso manifest
