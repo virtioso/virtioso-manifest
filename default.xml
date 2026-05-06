@@ -47,7 +47,7 @@
   <!-- Yocto layers (wrynose LTS) -->
   <!-- poky was split into individual repos before the April 2026 LTS release -->
   <project remote="oe-git" name="openembedded-core" path="vm-images/oe-core" revision="wrynose"/>
-  <project remote="oe" name="bitbake" path="vm-images/bitbake" revision="2.12"/>
+  <project remote="oe" name="bitbake" path="vm-images/bitbake" revision="2.18"/>
   <project remote="yocto" name="meta-yocto" path="vm-images/meta-yocto" revision="wrynose"/>
   <!-- meta-raspberrypi has no wrynose branch yet; keep at walnascar -->
   <project remote="yocto" name="meta-raspberrypi" path="vm-images/meta-raspberrypi" revision="walnascar"/>
