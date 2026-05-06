@@ -3,6 +3,7 @@
   <remote name="github" fetch="https://github.com/"/>
   <remote name="yocto" fetch="https://git.yoctoproject.org/git/"/>
   <remote name="oe" fetch="https://github.com/openembedded/"/>
+  <remote name="oe-git" fetch="https://git.openembedded.org/"/>
   <remote name="virtioso" fetch="https://github.com/virtioso/"/>
 
   <!-- Virtioso build system -->
@@ -43,11 +44,15 @@
     <linkfile src="docs" dest="docs/virtioso-mux"/>
   </project>
 
-  <!-- Yocto layers -->
-  <project remote="yocto" name="poky" path="vm-images/poky" revision="walnascar"/>
+  <!-- Yocto layers (wrynose LTS) -->
+  <!-- poky was split into individual repos before the April 2026 LTS release -->
+  <project remote="oe-git" name="openembedded-core" path="vm-images/oe-core" revision="wrynose"/>
+  <project remote="oe" name="bitbake" path="vm-images/bitbake" revision="2.12"/>
+  <project remote="yocto" name="meta-yocto" path="vm-images/meta-yocto" revision="wrynose"/>
+  <!-- meta-raspberrypi has no wrynose branch yet; keep at walnascar -->
   <project remote="yocto" name="meta-raspberrypi" path="vm-images/meta-raspberrypi" revision="walnascar"/>
-  <project remote="oe" name="meta-openembedded" path="vm-images/meta-openembedded" revision="walnascar"/>
-  <project remote="github" name="OE4T/meta-tegra" path="vm-images/meta-tegra" revision="walnascar"/>
+  <project remote="oe" name="meta-openembedded" path="vm-images/meta-openembedded" revision="wrynose"/>
+  <project remote="github" name="OE4T/meta-tegra" path="vm-images/meta-tegra" revision="wrynose"/>
 
   <!-- Virtioso forks -->
   <extend-project name="seL4.git"                       remote="virtioso" revision="virtioso-next"/>
