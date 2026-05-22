@@ -31,7 +31,7 @@
   <project remote="virtioso" name="virtioso-camkes-vm.git" path="projects/virtioso-camkes-vm" revision="virtioso-next">
     <linkfile src="CLAUDE.md" dest="CLAUDE.md"/>
     <linkfile src="AGENTS.md" dest="AGENTS.md"/>
-    <linkfile src="docs" dest="docs"/>
+    <linkfile src="docs" dest="docs/virtioso-camkes-vm"/>
   </project>
 
   <!-- Local source repos used by Yocto recipes -->
