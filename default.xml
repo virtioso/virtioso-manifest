@@ -39,6 +39,9 @@
   <project remote="virtioso" name="kmod-vio-trace.git" path="sources/kmod-vio-trace" revision="virtioso-next"/>
   <project remote="virtioso" name="virtioso-contracts.git" path="sources/virtioso-contracts" revision="virtioso-next"/>
   <project remote="virtioso" name="sel4-linux-kernel-support.git" path="sources/sel4-linux-kernel-support" revision="virtioso-next"/>
+  <project remote="virtioso" name="virtioso-mux.git" path="sources/virtioso-mux" revision="virtioso-next">
+    <linkfile src="docs" dest="docs/virtioso-mux"/>
+  </project>
 
   <!-- Yocto layers -->
   <project remote="yocto" name="poky" path="vm-images/poky" revision="walnascar"/>
